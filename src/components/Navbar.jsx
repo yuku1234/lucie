@@ -53,7 +53,7 @@ export default function Navbar() {
                 className="w-full h-full object-contain"
                 onError={(e) => {
                   e.target.style.display = 'none'
-                  e.target.parentElement.innerHTML = `<div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold text-lg">S</div>`
+                  e.target.parentElement.innerHTML = `<div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold text-lg"><img src="/logo.png" alt="Logo" className="h-12 w-12 object-contain" /></div>`
                 }}
               />
             </div>
