@@ -46,14 +46,14 @@ export default function Navbar() {
             onClick={(e) => { e.preventDefault(); handleNavClick('#home') }}
             className="flex items-center gap-3 group"
           >
-            <div className="relative w-10 h-10 flex-shrink-0">
+            <div className="relative w-10 h-10 flex-shrink-0 rounded-xl overflow-hidden bg-white ring-1 ring-white/10">
               <img
                 src="/logo.png"
                 alt="Startup & Innovation Community Logo"
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain p-0.5"
                 onError={(e) => {
                   e.target.style.display = 'none'
-                  e.target.parentElement.innerHTML = `<div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold text-lg"><img src="/logo.png" alt="Logo" className="h-12 w-12 object-contain" /></div>`
+                  e.target.parentElement.innerHTML = `<div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold text-lg">S</div>`
                 }}
               />
             </div>
@@ -127,14 +127,14 @@ export default function Navbar() {
             <div className="relative z-10 flex flex-col h-full px-6 pt-24 pb-12">
               {/* Logo in menu */}
               <div className="flex items-center gap-3 mb-12">
-                <div className="w-12 h-12 flex-shrink-0">
+                <div className="w-12 h-12 flex-shrink-0 rounded-xl overflow-hidden bg-white ring-1 ring-white/10">
                   <img
                     src="/logo.png"
                     alt="Startup & Innovation Community Logo"
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-contain p-0.5"
                     onError={(e) => {
                       e.target.style.display = 'none'
-                      e.target.parentElement.innerHTML = `<div class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold text-xl"><img src="/logo.png" alt="Logo" className="h-12 w-12 object-contain" /></div>`
+                      e.target.parentElement.innerHTML = `<div class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold text-xl">S</div>`
                     }}
                   />
                 </div>
